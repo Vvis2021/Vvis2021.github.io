@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+        <link rel="stylesheet" href="style_me.css">
+    </head>
+	
+	<body>
+	<input type="text" id="num" value="">
+	<p id="result"></p>    
+	<script type="text/javascript">
+
+var elem = document.getElementById('num');
+elem.addEventListener('blur', func);
+
+function func() {
+	var num = 0;
+	var str = elem.value;
+	var arr = str.split(' ');
+	for (var i = 0; i < arr.length; i++) {
+		num += 1;
+ 	}
+	var p = document.getElementById('result');
+	p.innerHTML = num;
+}    
+		</script>
+	</body>
+	
+</html>
